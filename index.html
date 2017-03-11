@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Competency Assessment</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://bootswatch.com/simplex/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<center>
+<div class="row">
+	<div class="col-lg-12">
+		<div class="page-header">
+  			<h1>
+  				LAC+USC Medical Center
+  				<small> 
+  					Department of Laboratories and Pathology - Point Of Care Testing
+  				</small>
+  			</h1>	
+		</div>
+	</div>
+</div>
+</center>
+<div  id="instructions" class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h3>Competency Assessment- NOVA STATSTRIP Glucose Meter (Attachment B)</h3>
+			<div class="row">
+				<div class="col-lg-8">
+					<h5> Instructions: Fill out the information below. Once you have filled out the required fields, Press the "Submit and Start" button to the right. Your test will begin immediately after you have pressed the button.</h5>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+<br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/a549aa8780dbda16f6cff545aeabc3d71073911e/src/js/bootstrap-datetimepicker.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="http://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/a549aa8780dbda16f6cff545aeabc3d71073911e/build/css/bootstrap-datetimepicker.css" rel="stylesheet"/>	
+
+<div id="student_info" class="container">
+	<div id="calendar" class="row">
+		<div class="col-lg-8">
+			<div class="container">
+    				<div class="row">
+					<div class='col-lg-3'>
+            					<div class="form-group">
+							<div class='input-group date' id='datetimepicker1'>
+                    							<input type='text' class="form-control" placeholder="Date"/>
+                    								<span class="input-group-addon">
+                        								<span class="glyphicon glyphicon-calendar"></span>
+           									</span>
+     							</div>
+            					</div>
+					</div>       
+    				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-lg-8">
+			<div class= "col-lg-5">
+				<input type="text" class="form-control" placeholder="Name">
+			</div>
+			<div class="col-lg-5">
+				<input type="text" class="form-control" placeholder="Employee Number">
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div id="submit" class="btn btn-lg btn-info">Submit and Start</div> 
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-lg-8">
+			<div class= "col-lg-5">
+				<input type="text" class="form-control" placeholder="Ward/Ext">
+			</div>
+			<div class="col-lg-5">
+				<input type="text" class="form-control" placeholder="Nurse Manager/Ext">
+			</div>
+		</div>
+	</div>	
+</div>	
+	
+<div id="part_1" class="container">
+	<div class="row">
+		<h3>PART 1 - Quiz</h3>
+		<div class="row">
+			<div class="col-lg-8">
+			<h5>Instructions: Answer the questions below. Once you have completed the test, Press the red "SUBMIT" button at the bottom of the page. You will NOT be able to return to your questions once you have pressed the button.</h5>
+		</div>	
+	</div>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-lg-8">
+			<h4>1. What is the name of the new glucose meter and the name of its manufacturer?</h4>
+			<div class="row">
+				<div class="col-lg-5">
+					<label>Glucose Meter</label>
+					<input type="name" class="form-control" id="glucose-meter">
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-lg-5">
+					<label>Manufacturer</label>
+					<input type="name" class="form-control" id="manufacturer">
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+			<div class="col-lg-8">
+				<h4>2. A complete system consists of the following items: (check all items that apply)</h4>
+				<div class="row">
+					<div class="col-lg-5">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<input type="checkbox">
+								<label>Stat Strip glucose meter</label>
+							</li>
+							<li class="list-group-item">
+								<input type="checkbox">
+								<label>Downloader/Charger</label>
+							</li>
+							<li class="list-group-item">
+								<input type="checkbox">
+								<label>Cables (network and power)</label>
+							</li>
+							<li class="list-group-item">
+								<input type="checkbox">
+								<label>Battery</label>
+							</li>
+							<li class="list-group-item">
+								<input type="checkbox">
+								<label>Reagent Strips</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>					
+		<div class="row">
+			<div class="col-lg-8">
+				<h4>3. Stat Strip glucose meter MUST stay in the downloader/charger at all times when not in use.</h4>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="btn-group" role="group">
+  							<button type="button" class="btn btn-default">True</button>
+ 							<button type="button" class="btn btn-default">False</button>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8">
+				<h4>4. The used test strip in the device should be removed before lifting up the machine.</h4>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="btn-group" role="group">
+  							<button type="button" class="btn btn-default">True</button>
+ 							<button type="button" class="btn btn-default">False</button>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8">
+				<h4>5. Inability to access or operate the Stat Strip glucose meter may be due to any of the following: (check all that apply)</h4>
+				<div class="row">
+					<div class="col-lg-8">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<input type="checkbox">
+								<label>Operator not in the database, no record of training</label>
+							</li>
+							<li class="list-group-item">
+								<input type="checkbox">
+								<label>Certification expired, requires re-certification</label>
+							</li>
+							<li class="list-group-item">
+								<input type="checkbox">
+								<label>Trained, training checklist not received by POCT</label>
+							</li>
+							<li class="list-group-item">
+								<input type="checkbox">
+								<label>Recertified, status not updated by POCT</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-3" id="question-6">
+				<h4>6. Stat strip expires in</h4>
+			</div>
+			<div class="col-lg-1">
+				<input type="number" class="form-control"> 
+			</div>
+			<div class="col-lg-1">
+				<h4>days or</h4>
+			</div>
+			<div class="col-lg-1">
+				<input type="number" class="form-control"> 
+			</div>
+			<div class="col-lg-3">
+				<h4>months when opened.</h4>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-lg-12">
+				<h4>The vial(s) must be dated with date opened and open expiration date.</h4>
+			</div>	
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8">
+				<h4>7. Matching</h4>
+				<h5>Gold Colored Side ---
+					<div class="btn-group">
+ 						<div class="form-group">
+    							<select class="form-control" id="exampleSelect1">
+								<option>Top surface</option>
+      								<option>Bottom surface</option>
+      								<option>Inserted into meter well</option>
+      								<option>Sample Well</option>
+    							</select>
+  						</div>
+					</div>
+				</h5>
+				<h5>Blue Colored Side ---
+					<div class="btn-group">
+ 						<div class="form-group">
+    							<select class="form-control" id="exampleSelect1">
+								<option>Top surface</option>
+      								<option>Bottom surface</option>
+      								<option>Inserted into meter well</option>
+      								<option>Sample Well</option>
+    							</select>
+  						</div>
+					</div>
+				</h5>
+				<h5>Gold Metal End ---
+					<div class="btn-group">
+ 						<div class="form-group">
+    							<select class="form-control" id="exampleSelect1">
+								<option>Top surface</option>
+      								<option>Bottom surface</option>
+      								<option>Inserted into meter well</option>
+      								<option>Sample Well</option>
+    							</select>
+  						</div>
+					</div>
+				</h5>
+				<h5>White tip ---
+					<div class="btn-group">
+ 						<div class="form-group">
+    							<select class="form-control" id="exampleSelect1">
+								<option>Top surface</option>
+      								<option>Bottom surface</option>
+      								<option>Inserted into meter well</option>
+      								<option>Sample Well</option>
+    							</select>
+  						</div>
+					</div>
+				</h5>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8">
+				<h4>8. QC lockout means, QC levels 1 and 3 must be performed and deemed acceptable before patient testing can be done.</h4>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="btn-group" role="group">
+  							<button type="button" class="btn btn-default">True</button>
+ 							<button type="button" class="btn btn-default">False</button>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8">
+				<h4>9. The test strip must fill completely upon touching the blood droplet, DO NOT touch the test strip a second time.</h4>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="btn-group" role="group">
+  							<button type="button" class="btn btn-default">True</button>
+ 							<button type="button" class="btn btn-default">False</button>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8">
+				<h4>10. The Stat Strip glucose meter must be cleaned with a hospital-approved disinfectant (ex. Chlorox Bleach Wipes) after each use.  The disinfectant must be used as directed by the manufacturer.</h4>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="btn-group" role="group">
+  							<button type="button" class="btn btn-default">True</button>
+ 							<button type="button" class="btn btn-default">False</button>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8">
+				<h4>11. Two identifiers must be used to verify patient identification prior to performing the test; these are:</h4>
+				<!-- come back to this later -->
+			</div>
+		</div>
+		<br>		
+		<div class="row">
+			<div class="col-lg-8">
+				<h4>12. The Stat Strip glucose meter must be cleaned with a hospital-approved disinfectant (ex. Chlorox Bleach Wipes) after each use.  The disinfectant must be used as directed by the manufacturer.</h4>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="btn-group" role="group">
+  							<button type="button" class="btn btn-default">True</button>
+ 							<button type="button" class="btn btn-default">False</button>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8">
+				<h4>14. Patient result must be documented onto the patient's permanent medical record, and must be accompanied by a reference range. </h4>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="btn-group" role="group">
+  							<button type="button" class="btn btn-default">True</button>
+ 							<button type="button" class="btn btn-default">False</button>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8">
+				<h4>15. Which of the following procedures must be performed when a critical glucose result is obtained?</h4>
+				<div class="row">
+					<div class="col-lg-10">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<input name ="question15" type="radio">
+								<label>a. Notify the healthcare provider in charge of the patient</label>
+							</li>	
+							<li class="list-group-item">
+								<input name ="question15" type="radio">
+								<label>b. Document document notification: Test result, date, time and provider notified</label>
+							</li>	
+							<li class="list-group-item">
+								<input name ="question15" type="radio">
+								<label>c. All of the above</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>									
+
+<script type="text/javascript" src="assets/javascript/javascript.js"></script>	
+
+</body>
+</html>
